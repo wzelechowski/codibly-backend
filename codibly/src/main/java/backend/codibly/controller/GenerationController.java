@@ -22,8 +22,8 @@ public class GenerationController {
         return ResponseEntity.ok(generationService.getGenerationMix());
     }
 
-    @GetMapping("/window/{hours}")
-    ResponseEntity<OptimalChargingWindowResponse> getOptimalCharging(@PathVariable int hours) {
+    @GetMapping("/window")
+    ResponseEntity<OptimalChargingWindowResponse> getOptimalCharging(@RequestParam int hours) {
         return ResponseEntity.ok(generationService.getOptimalChargingWindow(hours));
     }
 }

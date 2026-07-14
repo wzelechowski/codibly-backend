@@ -6,7 +6,7 @@ import java.util.Map;
 
 public record GenerationMixResponse(
         LocalDate date,
-        Map<String, BigDecimal> avgValues,
+        Map<String, BigDecimal> dailyAverages,
         BigDecimal ecoPercentage
 ) {
 }
