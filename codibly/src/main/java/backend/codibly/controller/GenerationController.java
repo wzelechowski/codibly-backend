@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/generation")
-@CrossOrigin(origins = "${app.frontend.url}", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class GenerationController {
 
     private final GenerationService generationService;
